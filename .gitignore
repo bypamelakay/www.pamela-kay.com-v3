@@ -1,42 +1,47 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
 
-# compiled output
-/prototype/dist
-/prototype/tmp
-/prototype/out-tsc
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
 
-# dependencies
-/prototype/node_modules
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-/prototype/.sass-cache
-/prototype/connect.lock
-/prototype/coverage
-/prototype/libpeerconnection.log
-npm-debug.log
-/prototype/testem.log
-/prototype/typings
-
-# e2e
-/prototype/e2e/*.js
-/prototype/e2e/*.map
-
-# System Files
+# OS generated files #
+######################
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
 Thumbs.db
+
+# Custom #
+######################
+*.sass-cache*
+/node_modules
+grunt-config.json
+config.yml
+/_site
+assets/logo.png
