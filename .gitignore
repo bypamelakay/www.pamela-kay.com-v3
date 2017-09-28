@@ -45,3 +45,25 @@ grunt-config.json
 config.yml
 /_site
 assets/logo.png
+
+
+# Angular 4 prototype
+/prototype/node_modules
+/prototype/e2e
+/prototype/dist
+bazel-*
+e2e_test.*
+bower_components
+tools/gulp-tasks/cldr/cldr-data/
+pubspec.lock
+.c9
+.idea/
+.settings/
+*.swo
+modules/.settings
+.vscode
+modules/.vscode
+*secret.js
+yarn-error.log
+.build-analytics
+/prototype/modules/rollup-test/dist/
