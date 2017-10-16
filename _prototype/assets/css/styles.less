@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Lato');
 
-
 /*
   Primary:
   PMS 539 C - #00263a (@dark-blue)
@@ -18,8 +17,10 @@
   PMS Black 7 C - #3d3935 (@black)
   PMS 2332 C - #8c8985 (@black-medium)
   PMS Cool Gray 1 C - #d9d9d6 (@black-light)
-*/
 
+  Green
+  PMS 2272 C - #009a17 (@green)
+*/
 @dark-blue: #00263a;
 @dark-blue-mono-medium: #57728b;
 @dark-blue-mono-light: #a4c8e1;
@@ -28,22 +29,33 @@
 @black: #3d3935;
 @black-medium: #8c8985;
 @black-light: #d9d9d6;
+@green: #009a17;
+.sans-serif {
+  font-family: Lato, sans-serif;
+  letter-spacing: 0.01rem;
+}
+.serif {
+  font-family: Lora, serif;
+}
+
+
+
 
 html {
   font-size: 16px;
   height: 100%;
 }
 body {
+  .serif;
   background: #fff;
-  font-family: 'Lora', serif;
   height: 100%;
   margin: 0px;
   padding: 0px;
 }
 h5 {
-  .lato;
+  .sans-serif;
   color: @black;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0rem 0rem 0.2rem 0rem;
 }
 a {
@@ -64,11 +76,6 @@ a:hover {
 .pipe {
   border-left: solid 1px @black-light;
   margin: 0rem 0.8rem;
-}
-
-.lato {
-  font-family: Lato, sans-serif;
-  letter-spacing: 0.01rem;
 }
 
 
