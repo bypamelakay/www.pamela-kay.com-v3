@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Lato');
+
+
+/*
+  Primary:
+  PMS 539 C - #00263a (@dark-blue)
+
+  Secondary/Accent:
+  PMS 225 C - #df1995 (@pink)
+  PMS 7551 C - #b47e00 (@mustard)
+
+  Primary Monochromatic:
+  PMS 539 C - #00263a (@dark-blue)
+  PMS 2166 C - #57728b (@dark-blue-mono-medium)
+  PMS 243 C - #a4c8e1 (@dark-blue-mono-light)
+
+  Black Monochromatic
+  PMS Black 7 C - #3d3935 (@black)
+  PMS 2332 C - #8c8985 (@black-medium)
+  PMS Cool Gray 1 C - #d9d9d6 (@black-light)
+*/
+
+@dark-blue: #00263a;
+@dark-blue-mono-medium: #57728b;
+@dark-blue-mono-light: #a4c8e1;
+@pink: #df1995;
+@mustard: #b47e00;
+@black: #3d3935;
+@black-medium: #8c8985;
+@black-light: #d9d9d6;
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+body {
+  background: #fff;
+  font-family: 'Lora', serif;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+h5 {
+  .lato;
+  color: @black;
+  font-weight: 600;
+  margin: 0rem 0rem 0.2rem 0rem;
+}
+a {
+  color: @mustard;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container {
+  margin: 0px auto;
+  width: 60%;
+}
+.container-extended {
+  margin: 0px auto;
+  width: 80%;
+}
+.pipe {
+  border-left: solid 1px @black-light;
+  margin: 0rem 0.8rem;
+}
+
+.lato {
+  font-family: Lato, sans-serif;
+  letter-spacing: 0.01rem;
+}
+
+
+
+
+@import '_grid.less';
+@import '_header.less';
+@import '_content.less';
+@import '_footer.less';
