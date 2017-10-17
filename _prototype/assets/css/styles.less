@@ -22,8 +22,8 @@
   PMS 2272 C - #009a17 (@green)
 */
 @dark-blue: #00263a;
-@dark-blue-mono-medium: #57728b;
-@dark-blue-mono-light: #a4c8e1;
+@dark-blue-medium: #57728b;
+@dark-blue-light: #a4c8e1;
 @pink: #df1995;
 @mustard: #b47e00;
 @black: #3d3935;
@@ -37,8 +37,25 @@
 .serif {
   font-family: Lora, serif;
 }
-
-
+.btn {
+  border: none;
+  display: block;
+}
+input[type=submit] {
+  .sans-serif;
+  .btn;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  width: 100%;
+}
+input[type=submit].primary {
+  background: @pink;
+  color: #fff;
+}
+input[type=submit]:hover.primary {
+  background: darken(@pink, 10%);
+}
 
 
 html {
@@ -48,9 +65,21 @@ html {
 body {
   .serif;
   background: #fff;
+  color: @black-medium;
   height: 100%;
   margin: 0px;
   padding: 0px;
+}
+h4 {
+  .sans-serif;
+  border-bottom: solid 1px @black-light;
+  color: @dark-blue-medium;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  margin: 0rem 0rem 1rem 0rem;
+  padding-bottom: 0.2rem;
+  text-transform: uppercase;
 }
 h5 {
   .sans-serif;

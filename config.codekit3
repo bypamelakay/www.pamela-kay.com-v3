@@ -116,6 +116,72 @@
 		"oAP": "\/_prototype\/assets\/css\/styles.min.css.map",
 		"oF": 0
 		},
+	"\/_prototype\/assets\/img\/_src\/icon-facebook.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-facebook.eps",
+		"oF": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-hamburger-menu.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-hamburger-menu.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-instagram-logo.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-instagram-logo.eps",
+		"oF": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-instagram.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-instagram.eps",
+		"oF": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-linkedin.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-linkedin.eps",
+		"oF": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-pinterest.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-pinterest.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-shopping-bag.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-shopping-bag.eps",
+		"oF": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/icon-twitter.eps": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/icon-twitter.eps",
+		"oF": 0
+		},
+	"\/_prototype\/assets\/img\/_src\/logo_20171016.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/_prototype\/assets\/img\/_src\/logo_20171016.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/_prototype\/assets\/img\/badge-credit.png": {
 		"ft": 32768,
 		"iS": 121473,
@@ -138,25 +204,47 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/_prototype\/assets\/img\/icon-shopping-bag.png": {
+	"\/_prototype\/assets\/img\/icon-close.png": {
 		"ft": 32768,
-		"iS": 9271,
+		"iS": 2073,
 		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/icon-shopping-bag.png",
+		"oAP": "\/_prototype\/assets\/img\/icon-close.png",
 		"oF": 0,
 		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"\/_prototype\/assets\/img\/icon_20171016.png": {
+	"\/_prototype\/assets\/img\/icon-hamburger-menu.png": {
+		"ft": 32768,
+		"iS": 1770,
+		"oA": 0,
+		"oAP": "\/_prototype\/assets\/img\/icon-hamburger-menu.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prototype\/assets\/img\/icon-pk.png": {
 		"ft": 32768,
 		"iS": 12336,
 		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/icon_20171016.png",
+		"oAP": "\/_prototype\/assets\/img\/icon-pk.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/_prototype\/assets\/img\/icon-shopping-bag.png": {
+		"ft": 32768,
+		"iS": 4625,
+		"oA": 0,
+		"oAP": "\/_prototype\/assets\/img\/icon-shopping-bag.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -170,16 +258,6 @@
 		"opt": 0,
 		"oT": 1,
 		"q": 100
-		},
-	"\/_prototype\/assets\/img\/logo_20171016.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/logo_20171016.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/_prototype\/index.html": {
 		"ft": 8192,

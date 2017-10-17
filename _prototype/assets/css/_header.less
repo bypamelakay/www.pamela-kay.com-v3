@@ -2,11 +2,12 @@
   color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 98;
 }
 #msg {
   .sans-serif;
   background-color: lighten(@dark-blue, 8%);
-  color: @dark-blue-mono-light;
+  color: @dark-blue-light;
   font-size: 0.8rem;
   line-height: 36px;
   min-height: 36px;
@@ -19,26 +20,51 @@
 }
 #branding {
   background-color: @dark-blue;
-  min-height: 100px;
+  height: 100px;
   text-align: center;
   width: 100%;
 }
 #branding .logo {
   height: 3.6rem;
-  margin: 1.2rem 0rem 0rem 0rem;
+  margin: 1.28rem 0rem 0rem 0rem;
   width: auto;
+}
+#hamburger-menu {
+  position: absolute;
+  left: 0;
+  padding: 0px;
+  z-index: 99;
+}
+#hamburger-menu img {
+  height: 96px;
+  width: auto;
+}
+#hamburger-menu:hover {
+  background: @dark-blue-medium;
 }
 #account {
   color: #fff;
   position: absolute;
   right: 0;
-  z-index: 2;
+  z-index: 99;
+}
+#login {
+  .sans-serif;
+  display: inline-block;
+  font-size: 0.84rem;
+  font-weight: 400;
+  margin: 0rem 0.8rem 0rem 0rem;
+  line-height: 100px;
+}
+#login #logout {
+  display: inline-block;
+  margin-left: 0.4rem;
 }
 #cart {
   .sans-serif;
   background: #df1995 url('../img/icon-shopping-bag.png') no-repeat;
-  background-position: 50% 33%;
-  background-size:52px auto;
+  background-position: 37% 27%;
+  background-size: 88px auto;
   color: #fff;
   display: inline-block;
   height: 100px;
@@ -52,7 +78,7 @@
 #cart-items {
   color: @dark-blue;
   font-size: 1.12rem;
-  font-weight: 600;
+  font-weight: 400;
   margin-top: 42px;
 }
 #cart-amount {

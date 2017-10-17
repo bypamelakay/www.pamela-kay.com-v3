@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="apple-touch-icon" href="assets/img/logo.png">
-    <link rel="shortcut icon" href="assets/img/icon.png">
+    <link rel="apple-touch-icon" href="assets/img/icon-pk.png">
+    <link rel="shortcut icon" href="assets/img/icon-pk.png">
     <title>Pamela Kay</title>
     <meta name="robots" content="index, follow">
     <meta name="description" content="">
@@ -47,7 +47,15 @@
     <div id="page-container">
       <header id="header">
         <div id="msg">Use promo code <strong>SHOPSMALL</strong> for a 30% discount. Expires 10/31/17.</div>
-        <div id="account"><a href="/cart/" id="cart"><div id="cart-items">20</div><div id="cart-amount">$200.00 USD</div></a></div>
+
+        <div id="account">
+          <div id="login">
+            Hello, Michael. <a href="#" id="logout">Log Out</a>
+          </div>
+          <a href="/cart/" id="cart"><div id="cart-items">20</div><div id="cart-amount">$200.00 USD</div></a>
+        </div>
+
+        <a href="#" id="hamburger-menu"><img src="assets/img/icon-hamburger-menu.png" alt="Menu"></a>
         <div id="branding"><a href="/"><img src="assets/img/logo_20171016.png" class="logo" alt="Pamela Kay | Hand Made Like You"></a></div>
       </header>
       <!--/#header -->
@@ -56,33 +64,70 @@
 
 
       <div id="content">
-        <div class="grid two-col-grid">
-          <div>
-            Lorem
+        <main id="product-info" class="container grid">
+          <div id="product-photos">
+
           </div>
-          <div>
-            Ipsum
+          <div id="product-description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            
+            <div class="product-price" itemprop="price">$25.00 <span class="currency">USD</span></div>
+            <span id="why-login"><a href="#">Log in to save for later</a></span>
+
+            <div id="product-add">
+              <input type="hidden" name="quantity" value="1">
+              <input type="submit" name="add" id="add" class="primary button hover-animation" value="Add to shopping bag">
+            </div>
           </div>
-        </div>
-        <!--/.grid -->
+        </main>
+        <!--/#product-info -->
 
 
-        <div class="grid three-col-grid">
+        <aside id="value-prop" class="container">
           <div>
-            Lorem
+            <h4>Unique, limited production</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
+
           <div>
-            Ipsum
+            <h4>Hand made within 48 hours</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
+
           <div>
-            Dolor
+            <h4>Expedited shipping options</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
           </div>
-        </div>
-        <!--/.grid -->
+        </aside>
+        <!--/#value-prop -->
 
 
-
-        
+        <section id="board">
+          <div class="grid two-col-grid">
+            <div>
+              Lorem
+            </div>
+            <div>
+              Ipsum
+            </div>
+          </div>
+          <!--/.grid -->
+  
+  
+          <div class="grid three-col-grid">
+            <div>
+              Lorem
+            </div>
+            <div>
+              Ipsum
+            </div>
+            <div>
+              Dolor
+            </div>
+          </div>
+          <!--/.grid -->
+        </section>
+        <!--/#board -->
       </div>
       <!--/#content -->
 
@@ -92,7 +137,7 @@
       <footer id="footer">
         <div class="container">
           <blockquote id="quality">
-            <p><span>&ldquo;</span>When you care about something because it's personal, you'll care about its details.  That is <em>exactly</em> why Pamela Kay products are <em>hand made ~ like you</em>.  Each material is meticulously chosen, and each cut and stitch precisely made.  The result is a unique signature of excellence in each product.<span>&rdquo;</span></p>
+            <p><span>&ldquo;</span>When something is personally important to you, you care about its details.  That is <em>exactly</em> why Pamela Kay products are <em>hand made ~ like you</em>.  Each material is meticulously chosen, and each cut and stitch precisely made.  The result is a unique signature of excellence in each product.<span>&rdquo;</span></p>
   
             <footer><a href="/about">Pamela Kay Mallari</a></footer>
           </blockquote>
@@ -100,7 +145,7 @@
 
           <section id="tc">
             Copyright &copy; 2017 Pamela Kay. All rights reserved. <span class="pipe"></span>
-            <strong>Secured Connection</strong> <span class="pipe"></span>
+            <strong>PCI DSS: Compliant</strong> <span class="pipe"></span>
             <a href="/privacy/">Privacy Policy</a> <span class="pipe"></span>
             <a href="/terms/">Terms of Use</a> <span class="pipe"></span>
             <a href="/return/">Return Policy</a>
@@ -126,6 +171,7 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/js/functions.min.js"></script>
     <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
   </body>

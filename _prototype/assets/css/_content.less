@@ -1,4 +1,61 @@
 #content {
   min-height: 300px;
-  padding-top: 136px;
+  padding-top: 150px;
+}
+#product-photos {
+  background: @black-light;
+}
+#product-info {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 3rem;
+  grid-template-columns: 7fr 5fr;
+  margin-top: 3rem;
+}
+#product-info > div {
+  padding: 0px;
+}
+#product-description p,
+#product-description li {
+  font-size: 0.88rem;
+  line-height: 1.6rem;
+  margin: 0rem 0rem 2rem 0rem;
+}
+.product-price {
+  color: @dark-blue;
+  display: inline-block;
+  font-size: 2.44rem;
+  margin-bottom: 3rem;
+}
+.product-price > span {
+  .sans-serif;
+  color: @dark-blue-medium;
+  font-size: 0.8rem;
+  letter-spacing: 0.04rem;
+}
+#why-login {
+  .sans-serif;
+  display: inline-block;
+  float: right;
+  font-size: 0.76rem;
+  line-height: 1rem;
+  margin-top: 0.72rem;
+  text-align: right;
+  width: 130px;
+}
+#value-prop {
+  display: grid;
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 3rem;
+  grid-template-columns: 4fr 4fr 4fr;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+#value-prop p {
+  font-size: 0.84rem;
+  line-height: 1.2rem;
+  margin: 0px;
+}
+#board {
+  background: @black-light;
 }
