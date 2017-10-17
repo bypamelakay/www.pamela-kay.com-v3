@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lora|Lato');
-
 /*
   Primary:
   PMS 539 C - #00263a (@dark-blue)
@@ -56,6 +55,23 @@ input[type=submit].primary {
 input[type=submit]:hover.primary {
   background: darken(@pink, 10%);
 }
+.hover-animation-background {
+  -moz-transition: background 0.24s ease; 
+  -webkit-transition: background 0.24s ease; 
+  -o-transition: background 0.24s ease; 
+  -ms-transition: background 0.24s ease; 
+  transition: background 0.24s ease;
+}
+.toggle-animation-top {
+  -moz-transition: top 0.8s ease; 
+  -webkit-transition: top 0.8s ease; 
+  -o-transition: top 0.8s ease; 
+  -ms-transition: top 0.8s ease; 
+  transition: top 0.8s ease;
+}
+.disable-scroll {
+	overflow: hidden !important;
+}
 
 
 html {
@@ -70,9 +86,12 @@ body {
   margin: 0px;
   padding: 0px;
 }
+#page-container {
+  height: 100%;
+}
 h4 {
   .sans-serif;
-  border-bottom: solid 1px @black-light;
+  border-bottom: dashed 1px lighten(@black, 50%);
   color: @dark-blue-medium;
   font-size: 0.72rem;
   font-weight: 600;
@@ -84,7 +103,7 @@ h4 {
 h5 {
   .sans-serif;
   color: @black;
-  font-weight: 400;
+  font-weight: 600;
   margin: 0rem 0rem 0.2rem 0rem;
 }
 a {
@@ -98,6 +117,10 @@ a:hover {
   margin: 0px auto;
   width: 60%;
 }
+.container-narrow {
+  margin: 0px auto;
+  width: 25%;
+}
 .container-extended {
   margin: 0px auto;
   width: 80%;
@@ -110,7 +133,94 @@ a:hover {
 
 
 
+@media (max-width: 374px) {
+
+}
+@media (min-width: 375px) {
+
+}
+@media (min-width: 375px) and (max-width: 413px) {
+
+}
+@media (max-width: 413px) {
+
+}
+@media (min-width: 414px) {
+
+}
+@media (min-width: 414px) and (max-width: 506px) {
+
+}
+@media (max-width: 506px) {
+
+}
+@media (min-width: 507px) {
+
+}
+@media (min-width: 507px) and (max-width: 677px) {
+
+}
+@media (max-width: 677px) {
+
+}
+@media (min-width: 678px) {
+  #sk-holder #sk-messenger-button {
+    right: 32px !important;
+  }
+}
+@media (min-width: 678px) and (max-width: 767px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 992px) and (max-width: 1023px)  {
+
+}
+@media (max-width: 1023px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+}
+@media (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+  #sk-holder #sk-messenger-button {
+    right: 44px !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+}
+@media (max-width: 1399px) {
+
+}
+@media (min-width: 1400px) {
+
+}
+
+
+
+
 @import '_grid.less';
 @import '_header.less';
+@import '_nav.less';
 @import '_content.less';
 @import '_footer.less';

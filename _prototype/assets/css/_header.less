@@ -26,18 +26,27 @@
 }
 #branding .logo {
   height: 3.6rem;
-  margin: 1.28rem 0rem 0rem 0rem;
+  margin: 1.32rem 0rem 0rem 0rem;
   width: auto;
 }
 #hamburger-menu {
-  position: absolute;
+  display: block;
+  height: 100px;
   left: 0;
   padding: 0px;
+  position: absolute;
+  width: 100px;
   z-index: 99;
 }
-#hamburger-menu img {
-  height: 96px;
-  width: auto;
+#hamburger-menu > span {
+  background-image: url('../img/icon-hamburger-menu.png');
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
+  display: block;
+  height: 100px;
+}
+#hamburger-menu > span.toggle {
+  background-image: url('../img/icon-close.png');
 }
 #hamburger-menu:hover {
   background: @dark-blue-medium;
@@ -61,7 +70,6 @@
   margin-left: 0.4rem;
 }
 #cart {
-  .sans-serif;
   background: #df1995 url('../img/icon-shopping-bag.png') no-repeat;
   background-position: 37% 27%;
   background-size: 88px auto;
@@ -76,13 +84,97 @@
   text-decoration: none;
 }
 #cart-items {
+  .serif;
   color: @dark-blue;
   font-size: 1.12rem;
   font-weight: 400;
   margin-top: 42px;
 }
 #cart-amount {
+  .sans-serif;
   font-size: 0.72rem;
   font-weight: 400;
   margin-top: 13px;
+}
+
+
+
+
+@media (max-width: 374px) {
+
+}
+@media (min-width: 375px) {
+
+}
+@media (min-width: 375px) and (max-width: 413px) {
+
+}
+@media (max-width: 413px) {
+
+}
+@media (min-width: 414px) {
+
+}
+@media (min-width: 414px) and (max-width: 506px) {
+
+}
+@media (max-width: 506px) {
+
+}
+@media (min-width: 507px) {
+
+}
+@media (min-width: 507px) and (max-width: 677px) {
+
+}
+@media (max-width: 677px) {
+
+}
+@media (min-width: 678px) {
+
+}
+@media (min-width: 678px) and (max-width: 767px) {
+
+}
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+@media (max-width: 991px) {
+
+}
+@media (min-width: 992px) {
+
+}
+@media (min-width: 992px) and (max-width: 1023px)  {
+
+}
+@media (max-width: 1023px) {
+
+}
+@media (min-width: 1024px) {
+
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+
+}
+@media (max-width: 1199px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+}
+@media (max-width: 1399px) {
+
+}
+@media (min-width: 1400px) {
+
 }

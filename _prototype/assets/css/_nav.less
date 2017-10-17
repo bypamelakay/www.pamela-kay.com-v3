@@ -1,26 +1,58 @@
-.grid {
+#nav-primary {
+  .toggle-animation-top;
+  background: @dark-blue;
+  display: block;
+  height: 100%;
+  margin: 0px;
+  padding-top: 160px;
+  position: absolute;
+  top: -3000px;
+  width: 100%;
+  z-index: 2;
+}
+#nav-primary.toggle {
+  top: 0px;
+}
+#collection ul {
   display: grid;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(36px, auto);
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style: none;
+  margin: 0px;
+  padding: 3rem 0rem;
 }
-.grid > div {
-  // border: solid 1px #e0e0e0;
+#collection li {
+  background: @dark-blue-light;
+  margin: 0px;
+  padding: 0px;
 }
-.grid-vertical-middle {
-  align-self: center;
+#social ul {
+  border-top: dashed 1px @dark-blue-medium;
+  list-style: none;
+  margin: 0px;
+  padding: 1rem 0rem 0rem 0rem;
+  text-align: center;
+  width: 100%;
 }
-.grid-vertical-bottom {
-  align-self: end;
+#social li {
+  color: #fff;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  width: 12%;
 }
-
-.two-col-grid {
-  grid-template-columns: 9fr 3fr;
+#social svg { border: solid 1px #f90;
+  height: 24px;
+  width: 24px;
 }
-
-
-.three-col-grid {
-  grid-template-columns: 6fr 3fr 3fr;
+#social svg path,
+#social svg rect {
+  fill: #fff;
+  stroke: #fff;
 }
-
 
 
 

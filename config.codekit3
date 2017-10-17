@@ -83,6 +83,23 @@
 		"sM": 0,
 		"sU": 0
 		},
+	"\/_prototype\/assets\/css\/_nav.less": {
+		"aP": 0,
+		"bl": 0,
+		"dJ": 0,
+		"ft": 1,
+		"ie": 1,
+		"iI": 0,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/_prototype\/assets\/css\/_nav.css",
+		"oF": 0,
+		"oS": 0,
+		"rU": 0,
+		"sI": 0,
+		"sM": 0,
+		"sU": 0
+		},
 	"\/_prototype\/assets\/css\/styles.less": {
 		"aP": 0,
 		"bl": 0,
@@ -116,148 +133,37 @@
 		"oAP": "\/_prototype\/assets\/css\/styles.min.css.map",
 		"oF": 0
 		},
-	"\/_prototype\/assets\/img\/_src\/icon-facebook.eps": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-facebook.eps",
+	"\/_prototype\/assets\/img": {
+		"ft": 65536,
+		"oA": 1,
+		"oAP": "\/build\/_prototype\/assets\/img",
 		"oF": 0
 		},
-	"\/_prototype\/assets\/img\/_src\/icon-hamburger-menu.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-hamburger-menu.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
+	"\/_prototype\/assets\/js\/functions.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_prototype\/assets\/js\/functions.min.js",
+		"oF": 2,
+		"sC": 0,
+		"tS": 0
 		},
-	"\/_prototype\/assets\/img\/_src\/icon-instagram-logo.eps": {
+	"\/_prototype\/assets\/js\/functions.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/_prototype\/assets\/js\/functions.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/_prototype\/assets\/js\/functions.min.js.map": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-instagram-logo.eps",
+		"oAP": "\/_prototype\/assets\/js\/functions.min.js.map",
 		"oF": 0
-		},
-	"\/_prototype\/assets\/img\/_src\/icon-instagram.eps": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-instagram.eps",
-		"oF": 0
-		},
-	"\/_prototype\/assets\/img\/_src\/icon-linkedin.eps": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-linkedin.eps",
-		"oF": 0
-		},
-	"\/_prototype\/assets\/img\/_src\/icon-pinterest.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-pinterest.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/_prototype\/assets\/img\/_src\/icon-shopping-bag.eps": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-shopping-bag.eps",
-		"oF": 0
-		},
-	"\/_prototype\/assets\/img\/_src\/icon-twitter.eps": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/icon-twitter.eps",
-		"oF": 0
-		},
-	"\/_prototype\/assets\/img\/_src\/logo_20171016.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/_prototype\/assets\/img\/_src\/logo_20171016.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/_prototype\/assets\/img\/badge-credit.png": {
-		"ft": 32768,
-		"iS": 121473,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/badge-credit.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_prototype\/assets\/img\/badge-pci.png": {
-		"ft": 32768,
-		"iS": 54699,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/badge-pci.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_prototype\/assets\/img\/icon-close.png": {
-		"ft": 32768,
-		"iS": 2073,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/icon-close.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_prototype\/assets\/img\/icon-hamburger-menu.png": {
-		"ft": 32768,
-		"iS": 1770,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/icon-hamburger-menu.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_prototype\/assets\/img\/icon-pk.png": {
-		"ft": 32768,
-		"iS": 12336,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/icon-pk.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_prototype\/assets\/img\/icon-shopping-bag.png": {
-		"ft": 32768,
-		"iS": 4625,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/icon-shopping-bag.png",
-		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/_prototype\/assets\/img\/logo_20171016.png": {
-		"ft": 32768,
-		"iS": 18318,
-		"oA": 0,
-		"oAP": "\/_prototype\/assets\/img\/logo_20171016.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"\/_prototype\/index.html": {
 		"ft": 8192,
@@ -329,11 +235,11 @@
 		},
 	"\/README.md": {
 		"cS": 0,
-		"eF": 1,
-		"eL": 1,
+		"eF": 0,
+		"eL": 0,
 		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
+		"ema": 0,
+		"eSQ": 0,
 		"ft": 4096,
 		"oA": 0,
 		"oAP": "\/README.html",
@@ -341,7 +247,7 @@
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
-		"pME": 1,
+		"pME": 0,
 		"rFN": 0,
 		"uCM": 0
 		},
@@ -2342,7 +2248,7 @@
 		],
 	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
-	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/assets, \/config, \/layout, \/locales, \/snippets, \/spec, \/templates",
+	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules, \/assets, \/config, \/layout, \/locales, \/snippets, \/spec, \/templates, \/_prototype\/assets\/img",
 	"sourceFolderName": "source",
 	"susyVersion": 3,
 	"uglifyDefinesString": "",
