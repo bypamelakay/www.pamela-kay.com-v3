@@ -19,7 +19,7 @@
 #product-description li {
   font-size: 0.88rem;
   line-height: 1.6rem;
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0rem 0rem 1rem 0rem;
 }
 .product-price {
   color: @dark-blue;
@@ -32,6 +32,12 @@
   color: @dark-blue-medium;
   font-size: 0.8rem;
   letter-spacing: 0.04rem;
+}
+#product-add input[type=submit] {
+  background-image: url('../img/icon-plus.png');
+  background-position: 0% 50%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 #why-login {
   .sans-serif;
@@ -46,7 +52,7 @@
 }
 #value-prop {
   display: grid;
-  grid-auto-rows: minmax(100px, auto);
+  grid-auto-rows: minmax(120px, auto);
   grid-column-gap: 3rem;
   grid-template-columns: 4fr 4fr 4fr;
   margin-top: 7rem;
@@ -57,8 +63,52 @@
   line-height: 1.2rem;
   margin: 0px;
 }
-#board {
-  background: @black-light;
+#board > div {
+  .grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+#board > div > div {
+
+}
+#board > div > div:nth-child(1) {
+  background: darken(@dark-blue-medium,5%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#board > div > div:nth-child(2) {
+  background: lighten(@dark-blue-medium,5%);
+}
+#board > div > div:nth-child(3) {
+  background: darken(@dark-blue-medium, 10%);
+}
+#board > div > div:nth-child(4) {
+  background: lighten(@dark-blue-medium, 10%);
+}
+#board > div > div:nth-child(5) {
+  background: darken(@dark-blue-medium, 15%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#board > div > div:nth-child(6) {
+  background: lighten(@dark-blue-medium, 15%);
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+#board > div > div:nth-child(7) {
+  background: darken(@dark-blue-medium, 20%);
+}
+#board > div > div:nth-child(8) {
+  background: lighten(@dark-blue-medium, 20%);
+}
+#board > div > div:nth-child(9) {
+  background: darken(@dark-blue-medium, 25%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+#board > div > div:nth-child(10) {
+  background: lighten(@dark-blue-medium, 25%);
 }
 
 

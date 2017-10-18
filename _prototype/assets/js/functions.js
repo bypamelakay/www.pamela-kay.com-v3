@@ -9,25 +9,25 @@ $('.toggle-hamburger-menu').click(function() {
   // $('#nav-menu > span').toggleClass('glyphicon-remove');
 });
 $('.height-full').css({
-    'min-height' : function() { return $(window).height() * 1.0; }
+  'min-height' : function() { return $(window).height() * 1.0; }
 });
 $('.height-3-4').css({
-    'min-height' : function() { return $(window).height() * 0.75; }
+  'min-height' : function() { return $(window).height() * 0.75; }
 });
 $('.height-half').css({
-    'min-height' : function() { return $(window).height() * 0.5; }
+  'min-height' : function() { return $(window).height() * 0.5; }
 });
 $('.grid-rectangle').each(function() {
-    $(this).height( $(this).width() * 1.0 );
+  $(this).height( $(this).width() * 1.0 );
 });
 $('.container-1-4-width').each(function() {
-    $(this).width( $('#page-container').width() * 0.25 );
+  $(this).width( $('#page-container').width() * 0.25 );
 });
 $('.vertical-middle').css({
-    'margin-top' : function() { return $(this).outerHeight() / -2; }
+  'margin-top' : function() { return $(this).outerHeight() / -2; }
 });
 $('.vertical-bottom').css({
-    'bottom' : function() { return -$(this).outerHeight(); }
+  'bottom' : function() { return -$(this).outerHeight(); }
 });
 
 
