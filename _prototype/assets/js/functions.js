@@ -1,8 +1,8 @@
 function UpdateLayout() {
   $('#board > div').css({
     // grid-auto-rows: minmax(200px, auto);
-    'grid-auto-rows' : function() { 
-      return ('minmax(' + $(window).width() * 0.16 + 'px, auto)');
+    'grid-auto-rows' : function() {
+      return ('minmax(' + $(window).width() * 0.1875 + 'px, auto)');
     }
   });
   $('.height-full').css({
@@ -51,7 +51,7 @@ $(document).ready(function() {
   if ($(window).width() >= 375) {
   // alert("Window width >= 375");
 
-  } 
+  }
   if ($(window).width() >= 375 && $(window).width() <= 413) {
   // alert("Window width >= 375 + <= 413");
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
   if ($(window).width() >= 414) {
   // alert("Window width >= 414");
 
-  } 
+  }
   if ($(window).width() >= 414 && $(window).width() <= 506) {
   // alert("Window width >= 414 + <= 506");
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
   if ($(window).width() >= 507) {
   // alert("Window width >= 507");
 
-  } 
+  }
   if ($(window).width() >= 507 && $(window).width() <= 677) {
   // alert("Window width >= 507 + <= 677");
 
@@ -156,7 +156,7 @@ $(window).resize(function() {
   if ($(window).width() >= 375) {
   // alert("Window width >= 375");
 
-  } 
+  }
   if ($(window).width() >= 375 && $(window).width() <= 413) {
   // alert("Window width >= 375 + <= 413");
 
@@ -168,7 +168,7 @@ $(window).resize(function() {
   if ($(window).width() >= 414) {
   // alert("Window width >= 414");
 
-  } 
+  }
   if ($(window).width() >= 414 && $(window).width() <= 506) {
   // alert("Window width >= 414 + <= 506");
 
@@ -180,7 +180,7 @@ $(window).resize(function() {
   if ($(window).width() >= 507) {
   // alert("Window width >= 507");
 
-  } 
+  }
   if ($(window).width() >= 507 && $(window).width() <= 677) {
   // alert("Window width >= 507 + <= 677");
 
@@ -270,7 +270,7 @@ $(window).scroll(function() {
   if ($(window).width() >= 375) {
   // alert("Window width >= 375");
 
-  } 
+  }
   if ($(window).width() >= 375 && $(window).width() <= 413) {
   // alert("Window width >= 375 + <= 413");
 
@@ -282,7 +282,7 @@ $(window).scroll(function() {
   if ($(window).width() >= 414) {
   // alert("Window width >= 414");
 
-  } 
+  }
   if ($(window).width() >= 414 && $(window).width() <= 506) {
   // alert("Window width >= 414 + <= 506");
 
@@ -294,7 +294,7 @@ $(window).scroll(function() {
   if ($(window).width() >= 507) {
   // alert("Window width >= 507");
 
-  } 
+  }
   if ($(window).width() >= 507 && $(window).width() <= 677) {
   // alert("Window width >= 507 + <= 677");
 

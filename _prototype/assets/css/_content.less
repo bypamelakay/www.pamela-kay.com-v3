@@ -52,7 +52,7 @@
 }
 #value-prop {
   display: grid;
-  grid-auto-rows: minmax(25%, auto);
+  grid-auto-rows: minmax(120px, auto);
   grid-column-gap: 3rem;
   grid-template-columns: 4fr 4fr 4fr;
   margin-top: 7rem;
@@ -70,45 +70,46 @@
 #board > div > div {
 
 }
+@board-bg: @black-medium;
 #board > div > div:nth-child(1) {
-  background: darken(@dark-blue-medium,5%);
+  background: darken(@board-bg, 5%);
   grid-row-start: 1;
   grid-row-end: 3;
 }
 #board > div > div:nth-child(2) {
-  background: lighten(@dark-blue-medium,5%);
+  background: lighten(@board-bg, 5%);
 }
 #board > div > div:nth-child(3) {
-  background: darken(@dark-blue-medium, 10%);
+  background: darken(@board-bg, 10%);
 }
 #board > div > div:nth-child(4) {
-  background: lighten(@dark-blue-medium, 10%);
+  background: lighten(@board-bg, 10%);
 }
 #board > div > div:nth-child(5) {
-  background: darken(@dark-blue-medium, 15%);
+  background: darken(@board-bg, 15%);
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 4;
 }
 #board > div > div:nth-child(6) {
-  background: lighten(@dark-blue-medium, 15%);
+  background: lighten(@board-bg, 15%);
   grid-row-start: 2;
   grid-row-end: 4;
 }
 #board > div > div:nth-child(7) {
-  background: darken(@dark-blue-medium, 20%);
+  background: darken(@board-bg, 20%);
 }
 #board > div > div:nth-child(8) {
-  background: lighten(@dark-blue-medium, 20%);
+  background: lighten(@board-bg, 20%);
 }
 #board > div > div:nth-child(9) {
-  background: darken(@dark-blue-medium, 25%);
+  background: darken(@board-bg, 25%);
   grid-column-start: 2;
   grid-column-end: 4;
 }
 #board > div > div:nth-child(10) {
-  background: lighten(@dark-blue-medium, 25%);
+  background: lighten(@board-bg, 25%);
 }
 
 
