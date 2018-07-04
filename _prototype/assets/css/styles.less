@@ -31,7 +31,7 @@
 @green: #009a17;
 .sans-serif {
   font-family: Lato, sans-serif;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.04rem;
 }
 .serif {
   font-family: Lora, serif;
@@ -58,17 +58,17 @@ input[type=submit]:hover.primary {
   background: darken(@pink, 10%);
 }
 .hover-animation-background {
-  -moz-transition: background 0.24s ease; 
-  -webkit-transition: background 0.24s ease; 
-  -o-transition: background 0.24s ease; 
-  -ms-transition: background 0.24s ease; 
+  -moz-transition: background 0.24s ease;
+  -webkit-transition: background 0.24s ease;
+  -o-transition: background 0.24s ease;
+  -ms-transition: background 0.24s ease;
   transition: background 0.24s ease;
 }
 .toggle-animation-top {
-  -moz-transition: top 0.8s ease; 
-  -webkit-transition: top 0.8s ease; 
-  -o-transition: top 0.8s ease; 
-  -ms-transition: top 0.8s ease; 
+  -moz-transition: top 0.8s ease;
+  -webkit-transition: top 0.8s ease;
+  -o-transition: top 0.8s ease;
+  -ms-transition: top 0.8s ease;
   transition: top 0.8s ease;
 }
 .disable-scroll {
@@ -77,7 +77,7 @@ input[type=submit]:hover.primary {
 
 
 html {
-  font-size: 16px;
+  font-size: 12px;
   height: 100%;
 }
 body {
@@ -105,8 +105,10 @@ h4 {
 h5 {
   .sans-serif;
   color: @black;
-  font-weight: 600;
-  margin: 0rem 0rem 0.2rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.36rem;
+  margin: 0rem 0rem 0.36rem 0rem;
 }
 a {
   color: @mustard;
@@ -116,8 +118,7 @@ a:hover {
   text-decoration: underline;
 }
 .container {
-  margin: 0px auto;
-  width: 60%;
+  margin: 0px 3rem;
 }
 .container-narrow {
   margin: 0px auto;
@@ -139,7 +140,9 @@ a:hover {
 
 }
 @media (min-width: 375px) {
-
+  html {
+    font-size: 13px;
+  }
 }
 @media (min-width: 375px) and (max-width: 413px) {
 
@@ -148,7 +151,9 @@ a:hover {
 
 }
 @media (min-width: 414px) {
-
+  html {
+    font-size: 15px;
+  }
 }
 @media (min-width: 414px) and (max-width: 506px) {
 
@@ -157,15 +162,31 @@ a:hover {
 
 }
 @media (min-width: 507px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 507px) and (max-width: 550px) {
 
 }
-@media (min-width: 507px) and (max-width: 677px) {
+@media (max-width: 550px) {
+
+}
+@media (min-width: 551px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media (min-width: 551px) and (max-width: 677px) {
 
 }
 @media (max-width: 677px) {
 
 }
 @media (min-width: 678px) {
+  html {
+    font-size: 21px;
+  }
   #sk-holder #sk-messenger-button {
     right: 32px !important;
   }
@@ -186,7 +207,12 @@ a:hover {
 
 }
 @media (min-width: 992px) {
-
+  html {
+    font-size: 15px;
+  }
+  .container {
+    margin: 0px 9rem;
+  }
 }
 @media (min-width: 992px) and (max-width: 1023px)  {
 
@@ -204,18 +230,48 @@ a:hover {
 
 }
 @media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+  .container {
+    margin: 0px 12rem;
+  }
   #sk-holder #sk-messenger-button {
     right: 44px !important;
   }
 }
-@media (min-width: 1200px) and (max-width: 1399px) {
-
-}
-@media (max-width: 1399px) {
-
-}
 @media (min-width: 1400px) {
-
+  html {
+    font-size: 17px;
+  }
+  .container {
+    margin: 0px 16rem;
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1800px) {
+  html {
+    font-size: 19px;
+  }
+}
+@media (min-width: 2000px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media (min-width: 2200px) {
+  html {
+    font-size: 21px;
+  }
+}
+@media (min-width: 2400px) {
+  html {
+    font-size: 22px;
+  }
 }
 
 
