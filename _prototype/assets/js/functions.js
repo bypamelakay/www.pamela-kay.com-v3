@@ -26,6 +26,9 @@ function UpdateLayout() {
   $('.vertical-bottom').css({
     'bottom' : function() { return -$(this).outerHeight(); }
   });
+  $('#content').css({
+    'border-top-width' : function() { return $('#header').outerHeight(); }
+  });
 }
 
 
@@ -76,8 +79,20 @@ $(document).ready(function() {
   // alert("Window width >= 507");
 
   }
-  if ($(window).width() >= 507 && $(window).width() <= 677) {
-  // alert("Window width >= 507 + <= 677");
+  if ($(window).width() >= 507 && $(window).width() <= 550) {
+  // alert("Window width >= 507 + <= 550");
+
+  }
+  if ($(window).width() <= 550) {
+  // alert("Window width <= 550");
+
+  }
+  if ($(window).width() >= 551) {
+  // alert("Window width >= 551");
+
+  }
+  if ($(window).width() >= 551 && $(window).width() <= 677) {
+  // alert("Window width >= 551 + <= 677");
 
   }
   if ($(window).width() <= 677) {
@@ -181,8 +196,20 @@ $(window).resize(function() {
   // alert("Window width >= 507");
 
   }
-  if ($(window).width() >= 507 && $(window).width() <= 677) {
-  // alert("Window width >= 507 + <= 677");
+  if ($(window).width() >= 507 && $(window).width() <= 550) {
+  // alert("Window width >= 507 + <= 550");
+
+  }
+  if ($(window).width() <= 550) {
+  // alert("Window width <= 550");
+
+  }
+  if ($(window).width() >= 551) {
+  // alert("Window width >= 551");
+
+  }
+  if ($(window).width() >= 551 && $(window).width() <= 677) {
+  // alert("Window width >= 551 + <= 677");
 
   }
   if ($(window).width() <= 677) {
@@ -263,6 +290,16 @@ $(window).resize(function() {
 
 
 $(window).scroll(function() {
+  if( $(window).scrollTop() > 400 ) {
+    $('body').css({
+      'background' : '#fff'
+    });
+  } else {
+    $('body').css({
+      'background' : '#00263a'
+    });
+  }
+
   if ($(window).width() < 375) {
   // alert("Window width < 375");
 
@@ -295,8 +332,20 @@ $(window).scroll(function() {
   // alert("Window width >= 507");
 
   }
-  if ($(window).width() >= 507 && $(window).width() <= 677) {
-  // alert("Window width >= 507 + <= 677");
+  if ($(window).width() >= 507 && $(window).width() <= 550) {
+  // alert("Window width >= 507 + <= 550");
+
+  }
+  if ($(window).width() <= 550) {
+  // alert("Window width <= 550");
+
+  }
+  if ($(window).width() >= 551) {
+  // alert("Window width >= 551");
+
+  }
+  if ($(window).width() >= 551 && $(window).width() <= 677) {
+  // alert("Window width >= 551 + <= 677");
 
   }
   if ($(window).width() <= 677) {

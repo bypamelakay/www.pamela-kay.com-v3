@@ -1,4 +1,5 @@
 #footer {
+  background: #fff;
   margin: 0px;
   padding: 7rem 0rem 0rem 0rem;
 }
@@ -25,6 +26,10 @@
   text-transform: uppercase;
 }
 #quality footer:before {
+  color: @black-medium;
+  content: "—";
+}
+#quality footer:after {
   color: @black-medium;
   content: "—";
 }
@@ -123,14 +128,40 @@
 @media (min-width: 507px) {
 
 }
-@media (min-width: 507px) and (max-width: 677px) {
+@media (min-width: 507px) and (max-width: 550px) {
+
+}
+@media (max-width: 550px) {
+
+}
+@media (min-width: 551px) {
+
+}
+@media (min-width: 551px) and (max-width: 677px) {
 
 }
 @media (max-width: 677px) {
 
 }
 @media (min-width: 678px) {
-
+  #footer h5 {
+    font-size: 0.92rem;
+    font-weight: 300;
+    letter-spacing: 0.02rem;
+  }
+  #quality {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 2.8rem;
+  }
+  #quality footer {
+    font-size: 0.64em;
+  }
+  #tc {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 0.01rem;
+  }
 }
 @media (min-width: 678px) and (max-width: 767px) {
 

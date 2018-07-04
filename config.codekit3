@@ -168,12 +168,33 @@
 		"oAP": "\/_prototype\/assets\/js\/functions.min.js.map",
 		"oF": 0
 		},
+	"\/_prototype\/collection.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/collection.html",
+		"oF": 0
+		},
 	"\/_prototype\/index.html": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/_prototype\/index.html",
 		"oF": 1
+		},
+	"\/_prototype\/product.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/product.html",
+		"oF": 0
+		},
+	"\/_prototype\/search.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/_prototype\/search.html",
+		"oF": 0
 		},
 	"\/assets": {
 		"ft": 65536,
