@@ -4,15 +4,31 @@
   border-top-style: solid;
   min-height: 30rem;
 }
+#hero {
+  background: @black-light;
+  background-position: 30% 80%;
+  background-size: 125% auto;
+  min-height: 22rem;
+}
+#hero h1 {
+  .serif;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.04rem;
+  margin: 0px;
+  padding: 13rem 0rem 0rem 0rem;
+  text-align: center;
+}
+#hero h1 span {
+  display: none;
+}
 #product-photos {
   background: @black-light;
 }
 #product-info {
-  display: grid;
-  grid-auto-rows: minmax(100px, auto);
-  grid-column-gap: 3rem;
-  grid-template-columns: 7fr 5fr;
   margin-top: 3rem;
+  min-height: 10rem;
 }
 #product-info > div {
   padding: 0px;
@@ -22,7 +38,7 @@
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.04rem;
-  margin: 0rem 0rem 1.6rem 0rem;
+  margin: 3rem 0rem 1.6rem 0rem;
 }
 #product-description p,
 #product-description li {
@@ -60,12 +76,15 @@
   width: 130px;
 }
 #value-prop {
-  display: grid;
-  grid-auto-rows: minmax(120px, auto);
-  grid-column-gap: 3rem;
-  grid-template-columns: 4fr 4fr 4fr;
-  margin-top: 7rem;
-  margin-bottom: 7rem;
+  display: block;
+  margin-top: 8rem;
+}
+#value-prop > div {
+  margin-bottom: 4rem;
+}
+#value-prop h4,
+#alternatives h4 {
+  font-size: 0.92rem;
 }
 #value-prop p {
   font-size: 0.84rem;
@@ -98,43 +117,63 @@
 @board-bg: @black-medium;
 #board > div > div:nth-child(1) {
   background: darken(@board-bg, 5%);
+  grid-column-start: 1;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
 }
 #board > div > div:nth-child(2) {
   background: lighten(@board-bg, 5%);
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 #board > div > div:nth-child(3) {
   background: darken(@board-bg, 10%);
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 #board > div > div:nth-child(4) {
   background: lighten(@board-bg, 10%);
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 #board > div > div:nth-child(5) {
   background: darken(@board-bg, 15%);
   grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 #board > div > div:nth-child(6) {
   background: lighten(@board-bg, 15%);
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
 }
 #board > div > div:nth-child(7) {
   background: darken(@board-bg, 20%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
 }
 #board > div > div:nth-child(8) {
   background: lighten(@board-bg, 20%);
+  grid-row-start: 5;
+  grid-row-end: 7;
 }
 #board > div > div:nth-child(9) {
   background: darken(@board-bg, 25%);
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 9;
 }
 #board > div > div:nth-child(10) {
   background: lighten(@board-bg, 25%);
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 7;
+  grid-row-end: 9;
 }
 
 
@@ -183,6 +222,117 @@
   #content {
     min-height: 30rem;
   }
+  #hero {
+    background-position: 50% 50%;
+    background-size: 140% auto;
+    min-height: 30rem;
+  }
+  #hero h1 {
+    font-size: 1.2rem;
+    padding: 20rem 0rem 0rem 0rem;
+  }
+  #product-info {
+    display: grid;
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 3rem;
+    grid-template-columns: 7fr 5fr;
+    margin-top: 4rem;
+  }
+  #product-description h1 {
+    margin-top: 0px;
+  }
+  #value-prop {
+    display: grid;
+    grid-auto-rows: minmax(120px, auto);
+    grid-column-gap: 3rem;
+    grid-template-columns: 4fr 4fr 4fr;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  #value-prop h4,
+  #alternatives h4 {
+    font-size: 0.64rem;
+  }
+  #value-prop p {
+    font-size: 0.84rem;
+    line-height: 1.2rem;
+    margin: 0px;
+  }
+  #board > div {
+    .grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #board > div > div {
+
+  }
+  #board > div > div:nth-child(1) {
+    background: darken(@board-bg, 5%);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  #board > div > div:nth-child(2) {
+    background: lighten(@board-bg, 5%);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #board > div > div:nth-child(3) {
+    background: darken(@board-bg, 10%);
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  #board > div > div:nth-child(4) {
+    background: lighten(@board-bg, 10%);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  #board > div > div:nth-child(5) {
+    background: darken(@board-bg, 15%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  #board > div > div:nth-child(6) {
+    background: lighten(@board-bg, 15%);
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #board > div > div:nth-child(7) {
+    background: darken(@board-bg, 20%);
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  #board > div > div:nth-child(8) {
+    background: lighten(@board-bg, 20%);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+  #board > div > div:nth-child(9) {
+    background: darken(@board-bg, 25%);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+  #board > div > div:nth-child(10) {
+    background: lighten(@board-bg, 25%);
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
 }
 @media (min-width: 678px) and (max-width: 767px) {
 
@@ -200,6 +350,12 @@
 
 }
 @media (min-width: 992px) {
+  #hero {
+    background: @black-light;
+    background-position: 20% 30%;
+    background-size: 110% auto;
+    min-height: 30rem;
+  }
   #alternatives ul {
     grid-auto-rows: minmax(120px, auto);
     grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
