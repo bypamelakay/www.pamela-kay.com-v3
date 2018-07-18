@@ -196,107 +196,1098 @@
 		"oAP": "\/_prototype\/search.html",
 		"oF": 0
 		},
-	"\/assets": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/assets",
+	"\/config.yml": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/config.yml",
 		"oF": 0
 		},
-	"\/bower.json": {
+	"\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/node_modules",
+		"oF": 0
+		},
+	"\/package-lock.json": {
 		"ft": 524288,
 		"oA": 1,
-		"oAP": "\/bower-min.json",
+		"oAP": "\/package-lock-min.json",
 		"oF": 0,
 		"oO": 0,
-		"oS": 0
+		"oS": 1
 		},
-	"\/circle.yml": {
+	"\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/assets\/ico-select.svg.liquid": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/circle.yml",
-		"oF": 1
-		},
-	"\/config": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/config",
+		"oA": 2,
+		"oAP": "\/src\/assets\/ico-select.svg.liquid",
 		"oF": 0
 		},
-	"\/config-sample.yml": {
+	"\/src\/config\/settings_data.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/config\/settings_data-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/config\/settings_schema.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/config\/settings_schema-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/icons\/icon-amazon_payments.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-amazon_payments.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-american_express.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-american_express.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-apple_pay.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-apple_pay.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-arrow-down.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-arrow-down.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-bitcoin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-bitcoin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-cart.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-cart.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-cirrus.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-cirrus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-dankort.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-dankort.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-diners_club.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-diners_club.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-discover.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-discover.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-dogecoin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-dogecoin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-dwolla.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-dwolla.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-facebook.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-forbrugsforeningen.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-forbrugsforeningen.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-hamburger.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-hamburger.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-instagram.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-interac.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-interac.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-jcb.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-jcb.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-litecoin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-litecoin.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-lock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-lock.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-maestro.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-maestro.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-master.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-master.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-minus.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-minus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-paypal.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-paypal.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-pinterest.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-pinterest.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-plus.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-plus.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-rss.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-rss.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-shopify-logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-shopify-logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-snapchat.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-snapchat.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-tumblr.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-tumblr.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-twitter.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-vimeo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-vimeo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-visa.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-visa.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/icons\/icon-youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/src\/icons\/icon-youtube.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/src\/layout\/gift_card.liquid": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/config-sample.yml",
-		"oF": 1
-		},
-	"\/Gemfile": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/Gemfile",
-		"oF": 1
-		},
-	"\/Gemfile.lock": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/Gemfile.lock",
-		"oF": 1
-		},
-	"\/layout": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/layout",
+		"oA": 2,
+		"oAP": "\/src\/layout\/gift_card.liquid",
 		"oF": 0
 		},
-	"\/LICENSE": {
+	"\/src\/layout\/password.liquid": {
 		"cB": 0,
 		"ft": 8192,
-		"oA": 1,
-		"oAP": "\/LICENSE",
-		"oF": 1
-		},
-	"\/locales": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/locales",
+		"oA": 2,
+		"oAP": "\/src\/layout\/password.liquid",
 		"oF": 0
 		},
-	"\/README.md": {
+	"\/src\/layout\/theme.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/layout\/theme.liquid",
+		"oF": 0
+		},
+	"\/src\/locales\/da.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/da-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/de.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/de-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/en.default.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/en.default-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/es.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/es-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/fr.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/fr-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/nl.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/nl-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/pt-BR.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/pt-BR-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/locales\/pt-PT.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/src\/locales\/pt-PT-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/src\/scripts\/giftcard.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/giftcard-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/sections\/product.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/sections\/product-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/a11y.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/a11y-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/cart.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/cart-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/currency.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/currency-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/images.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/images-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/rte.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/rte-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/sections.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/sections-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/utils.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/utils-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/slate\/variants.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/slate\/variants-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/templates\/customers-addresses.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/templates\/customers-addresses-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/templates\/customers-login.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/templates\/customers-login-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/theme.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/theme-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/vendor.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/vendor-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/vendor\/jquery-3.3.1.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/vendor\/jquery-3.3.1.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/scripts\/vendor\/modernizr.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/src\/scripts\/vendor\/modernizr.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/src\/sections\/collection-list.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/sections\/collection-list.liquid",
+		"oF": 0
+		},
+	"\/src\/sections\/featured-collection.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/sections\/featured-collection.liquid",
+		"oF": 0
+		},
+	"\/src\/sections\/featured-product.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/sections\/featured-product.liquid",
+		"oF": 0
+		},
+	"\/src\/sections\/footer.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/sections\/footer.liquid",
+		"oF": 0
+		},
+	"\/src\/sections\/header.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/sections\/header.liquid",
+		"oF": 0
+		},
+	"\/src\/sections\/product.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/sections\/product.liquid",
+		"oF": 0
+		},
+	"\/src\/snippets\/no-blocks.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/snippets\/no-blocks.liquid",
+		"oF": 0
+		},
+	"\/src\/snippets\/pagination.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/snippets\/pagination.liquid",
+		"oF": 0
+		},
+	"\/src\/snippets\/social-meta-tags.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/snippets\/social-meta-tags.liquid",
+		"oF": 0
+		},
+	"\/src\/snippets\/social-sharing.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/snippets\/social-sharing.liquid",
+		"oF": 0
+		},
+	"\/src\/styles\/global\/blank-states.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/blank-states.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/helper-classes.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/helper-classes.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/icons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/icons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/layout.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/layout.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/links-buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/links-buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/normalize.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/responsive-tables.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/responsive-tables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/rte.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/rte.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/global\/slate-reset.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/global\/slate-reset.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/modules\/gift-card-template.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/modules\/gift-card-template.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/modules\/site-header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/modules\/site-header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/settings\/variables.scss.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/styles\/settings\/variables.scss.liquid",
+		"oF": 0
+		},
+	"\/src\/styles\/theme.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/src\/styles\/theme.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/tools\/mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/src\/styles\/tools\/mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/src\/styles\/vendor\/README.md": {
 		"cB": 0,
 		"cS": 0,
-		"eF": 0,
-		"eL": 0,
-		"ema": 0,
-		"eSQ": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
 		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/README.html",
-		"oF": 1,
+		"oA": 0,
+		"oAP": "\/src\/styles\/vendor\/README.html",
+		"oF": 0,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
-		"pME": 0,
+		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/snippets": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/snippets",
+	"\/src\/templates\/404.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/404.liquid",
 		"oF": 0
 		},
-	"\/spec": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/spec",
+	"\/src\/templates\/article.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/article.liquid",
 		"oF": 0
 		},
-	"\/templates": {
-		"ft": 65536,
-		"oA": 1,
-		"oAP": "\/build\/templates",
+	"\/src\/templates\/blog.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/blog.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/cart.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/cart.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/collection.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/collection.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/account.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/account.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/activate_account.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/activate_account.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/addresses.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/addresses.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/login.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/login.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/order.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/order.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/register.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/register.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/customers\/reset_password.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/customers\/reset_password.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/gift_card.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/gift_card.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/index.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/index.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/list-collections.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/list-collections.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/page.contact.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/page.contact.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/page.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/page.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/page.styles.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/page.styles.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/password.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/password.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/product.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/product.liquid",
+		"oF": 0
+		},
+	"\/src\/templates\/search.liquid": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/src\/templates\/search.liquid",
 		"oF": 0
 		}
 	},
