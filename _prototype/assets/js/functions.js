@@ -1,4 +1,7 @@
 function UpdateLayout() {
+  $('#nav-primary').css({
+    'left' : function() { return -$(this).width() + "px"; }
+  })
   $('#board > div').css({
     // grid-auto-rows: minmax(200px, auto);
     'grid-auto-rows' : function() {
@@ -38,6 +41,7 @@ $(document).ready(function() {
   $('.toggle-hamburger-menu').click(function() {
     $('#hamburger-menu > span').toggleClass('toggle');
     $('#nav-primary').toggleClass('toggle');
+    $('#overlay').toggleClass('toggle');
     $('body').toggleClass('disable-scroll');
     // $('#nav-slider').toggleClass('nav-slider-out');
     // $('#page-container').toggleClass('blur');
