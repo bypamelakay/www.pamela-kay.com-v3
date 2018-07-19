@@ -19,40 +19,38 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" href="{{ 'icon-pk.png' | asset_url }}">
     <link rel="shortcut icon" href="{{ 'icon-pk.png' | asset_url }}">
+{%- if template.name == 'index' -%}
+    <title>{{ pk_title }}</title>
+{%- else -%}
     <title>{{ pk_title }} | Pamela Kay</title>
+{%- endif -%}
     <meta name="robots" content="index, follow">
     <meta name="description" content="{{ pk_description }}">
     <link rel="canonical" href="{{ canonical_url }}">
     <meta property="fb:app_id" content="">
     <meta property="fb:pages" content="">
     <meta property="og:type" content="{{ pk_type }}">
-{%- if template.name == 'product' -%}
-    <meta property="og:brand" content="Pamela Kay">
-{%- endif -%}
     <meta property="og:site_name" content="Pamela Kay">
     <meta property="og:title" content="{{ pk_title }}">
     <meta property="og:description" content="{{ pk_description }}">
-{%- if template.name == 'product' -%}
-    <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
-    <meta property="og:price:currency" content="{{ shop.currency }}">
-    <meta property="og:availability" content="in stock">
-{%- endif -%}
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:image" content="">
     <meta property="og:image:secure_url" content="">
-{%- if template.name == 'product' -%}
-    <meta property="product:brand" content="Pamela Kay">
-    <meta property="product:age_group" content="adult">
-    <meta property="product:price" content="25.00">
-    <meta property="product:availability" content="instock">
-    <meta property="product:product_link" content="{{ canonical_url }}">
-{%- endif -%}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@pamelakay_co">
     <meta name="twitter:title" content="{{ pk_title }}">
     <meta name="twitter:description" content="{{ pk_description }}">
     <meta name="twitter:image" content="">
 {%- if template.name == 'product' -%}
+    <meta property="og:brand" content="Pamela Kay">
+    <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
+    <meta property="og:price:currency" content="{{ shop.currency }}">
+    <meta property="og:availability" content="in stock">
+    <meta property="product:brand" content="Pamela Kay">
+    <meta property="product:age_group" content="adult">
+    <meta property="product:price" content="25.00">
+    <meta property="product:availability" content="instock">
+    <meta property="product:product_link" content="{{ canonical_url }}">
     <meta name="twitter:label1" content="Price">
     <meta name="twitter:data1" content="{{ product.price | strip_html }} {{ shop.currency }}">
     <meta name="twitter:label2" content="Brand">
