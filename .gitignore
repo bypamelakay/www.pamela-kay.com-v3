@@ -1,3 +1,18 @@
+# This file contains a list of files and folders to be ignored when
+# committing to a git repository.  Ignored files are both Slate project
+# specific files as well as commonly ignored files on any project.
+
+# For more information on this .gitignore files, see GitHub's
+# documentation: https://help.github.com/articles/ignoring-files/
+
+# Project #
+###################
+node_modules
+dist
+upload
+deploy.log
+config.yml
+
 # Compiled source #
 ###################
 *.com
@@ -33,37 +48,15 @@
 ._*
 .Spotlight-V100
 .Trashes
-Icon?
 ehthumbs.db
 Thumbs.db
 
 # Custom #
 ######################
 *.sass-cache*
-/node_modules
-grunt-config.json
-config.yml
-/_site
-assets/logo.png
-
-
-# Angular 4 prototype
-/prototype/node_modules
-/prototype/e2e
-/prototype/dist
-bazel-*
-e2e_test.*
-bower_components
-tools/gulp-tasks/cldr/cldr-data/
-pubspec.lock
-.c9
-.idea/
-.settings/
-*.swo
-modules/.settings
-.vscode
-modules/.vscode
-*secret.js
-yarn-error.log
-.build-analytics
-/prototype/modules/rollup-test/dist/
+_site
+/.idea
+secrets.json
+.jekyll-metadata
+.ruby-version
+config.codekit3

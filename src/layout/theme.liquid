@@ -1,77 +1,94 @@
-<!doctype html>
-<!--[if IE 9]> <html class="ie9 no-js supports-no-cookies" lang="{{ shop.locale }}"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js supports-no-cookies" lang="{{ shop.locale }}"> <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="{{ settings.color_primary }}">
-  <link rel="canonical" href="{{ canonical_url }}">
+<!DOCTYPE html>
+  <!--[if IE 9]> <html class="ie9 no-js supports-no-cookies" lang="{{ shop.locale }}"> <![endif]-->
+  <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js supports-no-cookies" lang="{{ shop.locale }}"> <!--<![endif]-->
+  <head prefix="og: http://ogp.me/ns/# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#">
+{%- assign pk_title = page_title -%}
+{%- assign pk_description = page_description | default: shop.description -%}
+{%- assign pk_type = 'website' -%}
+{%- if template.name == 'product' -%}
+  {%- assign pk_title = product.title | strip_html -%}
+  {%- assign pk_type = 'product' -%}
+{%- elsif template.name == 'article' -%}
+  {%- assign pk_title = article.title | strip_html -%}
+  {%- assign pk_description = article.excerpt_or_content | strip_html -%}
+  {%- assign pk_type = 'article' -%}
+{%- endif -%}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="/assets/img/icon-pk.png">
+    <link rel="shortcut icon" href="/assets/img/icon-pk.png">
+    <title>{{ pk_title }} | Pamela Kay</title>
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="{{ pk_description }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <meta property="fb:app_id" content="">
+    <meta property="fb:pages" content="">
+    <meta property="og:type" content="{{ pk_type }}">
+    <meta property="og:brand" content="Pamela Kay">
+    <meta property="og:site_name" content="Pamela Kay">
+    <meta property="og:title" content="{{ pk_title }}">
+    <meta property="og:description" content="{{ pk_description }}">
+{%- if template.name == 'product' -%}
+    <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
+    <meta property="og:price:currency" content="{{ shop.currency }}">
+    <meta property="og:availability" content="in stock">
+{%- endif -%}
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta property="product:brand" content="Pamela Kay">
+    <meta property="product:age_group" content="adult">
+    <meta property="product:price" content="25.00">
+    <meta property="product:availability" content="instock">
+    <meta property="product:product_link" content="{{ canonical_url }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@pamelakay_co">
+    <meta name="twitter:title" content="{{ pk_title }}">
+    <meta name="twitter:description" content="{{ pk_description }}">
+    <meta name="twitter:image" content="">
+{%- if template.name == 'product' -%}
+    <meta name="twitter:label1" content="Price">
+    <meta name="twitter:data1" content="{{ product.price | strip_html }} {{ shop.currency }}">
+    <meta name="twitter:label2" content="Brand">
+    <meta name="twitter:data2" content="Pamela Kay">
+{%- endif -%}
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K3HKXJ');</script>
+    <!-- End Google Tag Manager -->
+  </head>
 
-  {% if settings.favicon != blank %}
-    <link rel="shortcut icon" href="{{ settings.favicon | img_url: '32x32' }}" type="image/png">
-  {% endif %}
 
-  {% capture seo_title %}
-    {{ page_title }}
-    {% if current_tags %}
-      {%- assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}
-    {% endif %}
-    {% if current_page != 1 %}
-      &ndash; {{ 'general.meta.page' | t: page: current_page }}
-    {% endif %}
-    {% unless page_title contains shop.name %}
-      &ndash; {{ shop.name }}
-    {% endunless %}
-  {% endcapture %}
-  <title>{{ seo_title }}</title>
 
-  {% if page_description %}
-    <meta name="description" content="{{ page_description | escape }}">
-  {% endif %}
 
-  {% include 'social-meta-tags' %}
+  <body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3HKXJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-  {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
 
-  <script>
-    document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 
-    window.theme = {
-      strings: {
-        addToCart: {{ 'products.product.add_to_cart' | t | json }},
-        soldOut: {{ 'products.product.sold_out' | t | json }},
-        unavailable: {{ 'products.product.unavailable' | t | json }}
-      },
-      moneyFormat: {{ shop.money_format | json }}
-    };
-  </script>
 
-  {% if template.directory == 'customers' %}
-    <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script><!--<![endif]-->
-    <!--[if lte IE 9]><script src="{{ 'shopify_common.js' | shopify_asset_url }}"></script><![endif]-->
-  {% endif %}
+{% section 'header' %}
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'vendor.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-  <!--[if lt IE 9]><script src="{{ 'vendor.js' | asset_url }}"></script><![endif]-->
+{% section 'nav' %}
 
-  <!--[if (gt IE 9)|!(IE)]><!--><script src="{{ 'theme.js' | asset_url }}" defer="defer"></script><!--<![endif]-->
-  <!--[if lt IE 9]><script src="{{ 'theme.js' | asset_url }}"></script><![endif]-->
 
-  {{ content_for_header }}
-</head>
 
-<body id="{{ page_title | handle }}" class="template-{{ template.name | handle }}">
 
-  <a class="in-page-link visually-hidden skip-link" href="#MainContent">{{ 'general.accessibility.skip_to_content' | t }}</a>
+    <div id="content">
 
-  {% section 'header' %}
 
-  <main role="main" id="MainContent">
-    {{ content_for_layout }}
-  </main>
+    </div>
+    <!--/#content -->
 
-  {% section 'footer' %}
 
-</body>
-</html>
+
+
+{% section 'footer' %}
