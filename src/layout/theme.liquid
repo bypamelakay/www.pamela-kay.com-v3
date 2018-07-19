@@ -26,7 +26,9 @@
     <meta property="fb:app_id" content="">
     <meta property="fb:pages" content="">
     <meta property="og:type" content="{{ pk_type }}">
+{%- if template.name == 'product' -%}
     <meta property="og:brand" content="Pamela Kay">
+{%- endif -%}
     <meta property="og:site_name" content="Pamela Kay">
     <meta property="og:title" content="{{ pk_title }}">
     <meta property="og:description" content="{{ pk_description }}">
@@ -38,11 +40,13 @@
     <meta property="og:url" content="{{ canonical_url }}">
     <meta property="og:image" content="">
     <meta property="og:image:secure_url" content="">
+{%- if template.name == 'product' -%}
     <meta property="product:brand" content="Pamela Kay">
     <meta property="product:age_group" content="adult">
     <meta property="product:price" content="25.00">
     <meta property="product:availability" content="instock">
     <meta property="product:product_link" content="{{ canonical_url }}">
+{%- endif -%}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@pamelakay_co">
     <meta name="twitter:title" content="{{ pk_title }}">
@@ -54,7 +58,8 @@
     <meta name="twitter:label2" content="Brand">
     <meta name="twitter:data2" content="Pamela Kay">
 {%- endif -%}
-    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+{{ content_for_header }}
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -84,6 +89,7 @@
 
     <div id="content">
 
+{{ content_for_layout }}
 
     </div>
     <!--/#content -->
