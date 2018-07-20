@@ -14,7 +14,6 @@
   .serif;
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 300;
   letter-spacing: 0.04rem;
   margin: 0px;
   padding: 13rem 0rem 0rem 0rem;
@@ -23,8 +22,30 @@
 #hero h1 span {
   display: none;
 }
+
+
+
+/* Product page */
 #product-photos {
-  background: @black-light;
+
+}
+#product-photos ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+#product-photos li {
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  width: 25%;
+}
+#product-photos img {
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 #product-info {
   margin-top: 3rem;
@@ -58,11 +79,12 @@
   font-size: 0.8rem;
   letter-spacing: 0.04rem;
 }
+#product-add button[type=submit],
 #product-add input[type=submit] {
-  background-image: url('../img/icon-plus.png');
-  background-position: 0% 50%;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
+  // background-image: url('icon-plus.png');
+  // background-position: 0% 50%;
+  // background-repeat: no-repeat;
+  // background-size: auto 100%;
 }
 #why-login {
   .sans-serif;

@@ -32,29 +32,38 @@
 @green: #009a17;
 .sans-serif {
   font-family: 'Lato', sans-serif;
+  font-weight: 400;
   letter-spacing: 0.01rem;
 }
 .serif {
   font-family: 'Lora', serif;
+  font-weight: 400;
 }
 .btn {
   border: none;
   display: block;
 }
+button[type=submit],
 input[type=submit] {
   .sans-serif;
   .btn;
   font-size: 0.88rem;
-  font-weight: 400;
   letter-spacing: 0.08em;
   padding: 1.2rem 3rem;
   text-transform: uppercase;
   width: 100%;
 }
+button[type=submit].primary,
 input[type=submit].primary {
   background: @pink;
   color: #fff;
 }
+button[type=submit].disabled,
+input[type=submit].disabled {
+  background: @black-medium !important;
+  color: @black-light !important;
+}
+button[type=submit]:hover.primary,
 input[type=submit]:hover.primary {
   background: darken(@pink, 10%);
 }

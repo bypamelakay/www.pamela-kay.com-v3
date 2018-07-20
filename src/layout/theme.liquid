@@ -22,39 +22,43 @@
 {%- if template.name == 'index' -%}
     <title>{{ pk_title }}</title>
 {%- else -%}
-    <title>{{ pk_title }} | Pamela Kay</title>
+    <title>{{ pk_title }} | {{ shop.name }}</title>
 {%- endif -%}
     <meta name="robots" content="index, follow">
     <meta name="description" content="{{ pk_description }}">
     <link rel="canonical" href="{{ canonical_url }}">
     <meta property="fb:app_id" content="">
-    <meta property="fb:pages" content="">
+    <meta property="fb:pages" content="321537400217">
     <meta property="og:type" content="{{ pk_type }}">
-    <meta property="og:site_name" content="Pamela Kay">
+    <meta property="og:site_name" content="{{ shop.name }}">
     <meta property="og:title" content="{{ pk_title }}">
     <meta property="og:description" content="{{ pk_description }}">
     <meta property="og:url" content="{{ canonical_url }}">
-    <meta property="og:image" content="">
-    <meta property="og:image:secure_url" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@pamelakay_co">
     <meta name="twitter:title" content="{{ pk_title }}">
     <meta name="twitter:description" content="{{ pk_description }}">
-    <meta name="twitter:image" content="">
 {%- if template.name == 'product' -%}
-    <meta property="og:brand" content="Pamela Kay">
+    <meta property="og:brand" content="{{ shop.name }}">
     <meta property="og:price:amount" content="{{ product.price | money_without_currency | strip_html }}">
     <meta property="og:price:currency" content="{{ shop.currency }}">
-    <meta property="og:availability" content="in stock">
-    <meta property="product:brand" content="Pamela Kay">
+    <meta property="og:availability" content="{% if product.available %}in stock{% else %}out of stock{% endif %}">
+    <meta property="og:image" content="{{ featured_image | img_url: '480x480' }}">
+    <meta property="og:image:secure_url" content="{{ featured_image | img_url: '480x480' }}">
+    <meta property="product:brand" content="{{ shop.name }}">
     <meta property="product:age_group" content="adult">
-    <meta property="product:price" content="25.00">
-    <meta property="product:availability" content="instock">
+    <meta property="product:price" content="{{ product.price | money_without_currency | strip_html }}">
+    <meta property="product:availability" content="{% if product.available %}in stock{% else %}out of stock{% endif %}">
     <meta property="product:product_link" content="{{ canonical_url }}">
+    <meta name="twitter:image" content="{{ featured_image | img_url: '480x480' }}">
     <meta name="twitter:label1" content="Price">
-    <meta name="twitter:data1" content="{{ product.price | strip_html }} {{ shop.currency }}">
+    <meta name="twitter:data1" content="{{ product.price | money_without_currency | strip_html }}">
     <meta name="twitter:label2" content="Brand">
-    <meta name="twitter:data2" content="Pamela Kay">
+    <meta name="twitter:data2" content="{{ shop.name }}">
+{%- else -%}
+    <meta property="og:image" content="">
+    <meta property="og:image:secure_url" content="">
+    <meta name="twitter:image" content="">
 {%- endif -%}
     <link rel="stylesheet" href="{{ 'styles.min.css' | asset_url }}">
     <script>
@@ -98,9 +102,58 @@
 
 
 
-{% section 'header' %}
+    <header id="header">
+      <div id="msg">Use promo code <strong>FREEDOM18</strong> for a 20% discount. Expires&nbsp;7/22/18.</div>
 
-{% section 'nav' %}
+      <div id="account">
+        <div id="login">
+    {% if shop.customer_accounts_enabled %}
+      {% if customer %}
+          Hello, {{ customer.first_name }}.  &nbsp;|&nbsp; <a href="/account/">My Account</a> &nbsp;|&nbsp; {{ 'Log Out' | customer_logout_link }}
+      {% else %}
+          <a href="#" data-toggle="modal" data-target="#login-modal">Log in</a>,
+        {% if shop.customer_accounts_optional %}
+          <a href="#" data-toggle="modal" data-target="#register-modal">create an account</a>,<br>
+        {% endif %}
+          or simply shop as our guest.
+      {% endif %}
+    {% endif %}
+        </div>
+        <a href="/cart/" id="cart" title="You have {{ cart.item_count }} {{ cart.item_count | pluralize: 'item', 'items' }} ({{ cart.total_price | money }} {{ shop.currency }}) in your shopping bag."><div id="cart-items">{{ cart.item_count }}</div><div id="cart-amount">{{ cart.total_price | money }} {{ shop.currency }}</div></a>
+      </div>
+
+      <button id="hamburger-menu" class="toggle-hamburger-menu hover-animation-background"><span class="icon" alt="Menu" title="Menu"></span></button>
+      <div id="branding"><a href="/"><img src="{{ 'logo_20171016.png' | asset_url }}" class="logo" alt="Pamela Kay | Hand Made ~ Like You" title="Pamela Kay | Hand Made ~ Like You"></a></div>
+    </header>
+    <!--/#header -->
+
+
+
+
+    <nav id="nav-primary">
+      <div class="container">
+        <section id="collections">
+          <ul>
+            <li><a href="/collections/ring-pouches/">Ring Pouches</a></li>
+            <li><a href="/collections/wallets/">Wallets</a></li>
+            <li><a href="/collections/wristlets/">Wristlets</a></li>
+          </ul>
+        </section>
+
+
+        <section id="social">
+          <ul>
+            <li><a href="https://www.instagram.com/pamelakay_co/" target="_blank" id="instagram"><span class="fa fa-instagram"></span></a></li>
+            <li><a href="https://www.facebook.com/pamelakay.co/" target="_blank" id="facebook"><span class="fa fa-facebook"></span></a></li>
+            <li><a href="https://www.pinterest.com/pamelakay_co/" target="_blank" id="pinterest"><span class="fa fa-pinterest"></a></li>
+            <li><a href="https://twitter.com/pamelakay_co/" target="_blank" id="twitter"><span class="fa fa-twitter"></a></li>
+            <li><a href="https://www.linkedin.com/company/pamela-kay/" target="_blank" id="linkedin"><span class="fa fa-linkedin"></a></li>
+          </ul>
+        </section>
+      </div>
+    </nav>
+    <!--/#nav-primary -->
+    <div id="overlay" class="toggle-hamburger-menu"></div>
 
 
 
@@ -115,4 +168,65 @@
 
 
 
-{% section 'footer' %}
+    <footer id="footer">
+      <div class="container">
+        <blockquote id="quality">
+          <p><span>&ldquo;</span>When something is personally important to you, you care about its details.  That is <em>exactly</em> why Pamela Kay lifestyle goods are <em>hand made ~ like you</em>.  Each material is meticulously chosen, and each cut and stitch precisely made.  The result is a unique signature of excellence in each&nbsp;product.<span>&rdquo;</span></p>
+
+          <footer><a href="/pages/about/">Pamela Kay Mallari</a></footer>
+        </blockquote>
+
+
+        <section id="shopsmall">
+          <a href="http://shopsmall.com/" target="_blank"><img src="{{ 'ShopSmall_Web_Badge_c.png' | asset_url }}" alt="Shop Small" title="Thank you for your support. #ShopSmall"></a>
+        </section>
+
+
+        <section id="credit">
+          <h5>We accept the following credit cards.</h5>
+          <img src="{{ 'badge-credit.png' | asset_url }}" alt="We accept Visa, MasterCard, American Express, and Discover Card.">
+        </section>
+
+
+        <section id="pci">
+          <h5>This site meets all 6 categories of PCI security compliance&nbsp;standards.</h5>
+          <a href="https://www.shopify.com/pci-compliant" target="_black"><img src="{{ 'badge-pci.png' | asset_url }}" alt="PCI DSS Compliant"></a>
+        </section>
+
+
+        <section id="tc">
+          Copyright &copy; {{ "now" | date: "%Y" }} {{ shop.name }}. All&nbsp;rights&nbsp;reserved.<br />
+          <a href="/pages/privacy/">Privacy&nbsp;Policy</a> <span class="pipe"></span>
+          <a href="/pages/terms/">Terms&nbsp;of&nbsp;Use</a> <span class="pipe"></span>
+          <a href="/pages/returns/">Return&nbsp;Policy</a>
+        </section>
+      </div>
+    </footer>
+    <!--/#footer -->
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{{ 'functions.min.js' | asset_url }}"></script>
+{%- if template.name == 'product' -%}
+    <script src="{{ 'product.min.js' | asset_url }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
+    <script type="text/javascript">
+      var app = new Vue({
+        el: '#board',
+        data: {
+
+        }
+      })
+    </script>
+{%- else -%}
+
+{%- endif -%}
+    <script type="text/javascript">
+      $(document).ready(function() {
+
+      });
+    </script>
+  </body>
+</html>
