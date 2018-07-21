@@ -211,22 +211,31 @@
     <script src="{{ 'functions.min.js' | asset_url }}"></script>
 {%- if template.name == 'product' -%}
     <script src="{{ 'product.min.js' | asset_url }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script>
-    <script type="text/javascript">
-      var app = new Vue({
-        el: '#board',
-        data: {
-
-        }
-      })
-    </script>
 {%- else -%}
 
 {%- endif -%}
+{%- if template.name == 'index' or template.name == 'product' -%}
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.getJSON( "{{ 'data.json' | asset_url }}", function( data ) {
+          // var items = [];
+          // $.each( data, function( key, val ) {
+          //   items.push( "<li id='" + key + "'>" + val + "</li>" );
+          // });
+          //
+          // $( "<ul/>", {
+          //   "class": "my-new-list",
+          //   html: items.join( "" )
+          // }).appendTo( "body" );
+        });
+      });
+    </script>
+{%- else -%}
     <script type="text/javascript">
       $(document).ready(function() {
 
       });
     </script>
+{%- endif -%}
   </body>
 </html>

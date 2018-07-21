@@ -1,11 +1,27 @@
 <aside id="alternatives" class="container">
+{%- if template.name == 'product' -%}
   <h4>You may also like</h4>
+{%- else  -%}
+  <h4>Discover what makes these uniquely beautiful</h4>
+{%- endif -%}
   <ul>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
+    <li><a href="#">&nbsp;</a></li>
+    <li><a href="#">&nbsp;</a></li>
+    <li><a href="#">&nbsp;</a></li>
+    <li><a href="#">&nbsp;</a></li>
+    <li><a href="#">&nbsp;</a></li>
+    <li><a href="#">&nbsp;</a></li>
   </ul>
 </aside>
+{% schema %}
+  {
+    "name": "Recommendations",
+    "settings": []
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

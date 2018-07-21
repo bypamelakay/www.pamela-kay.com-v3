@@ -1,0 +1,28 @@
+{
+  "index": {
+    "board": {
+      "cell1": "url",
+      "cell2": "url",
+      "cell3": "url",
+      "cell4": "url",
+      "cell5": "url",
+      "cell6": "url",
+      "cell7": "url",
+      "cell8": "url",
+      "cell9": "url",
+      "cell10": "url"
+    },
+    "recommendations": {
+      "product1": "slug",
+      "product2": "slug",
+      "product3": "slug",
+      "product4": "slug",
+      "product5": "slug",
+      "product6": "slug",
+      "product7": "slug",
+      "product8": "slug",
+      "product9": "slug",
+      "product10": "slug"
+    }
+  }
+}
