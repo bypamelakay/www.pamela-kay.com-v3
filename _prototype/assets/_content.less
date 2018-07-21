@@ -25,78 +25,7 @@
 
 
 
-/* Product page */
-#product-photos {
 
-}
-#product-photos ul {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-#product-photos li {
-  display: inline-block;
-  margin: 0px;
-  padding: 0px;
-  width: 25%;
-}
-#product-photos img {
-  height: auto;
-  margin: 0px;
-  padding: 0px;
-  width: 100%;
-}
-#product-info {
-  margin-top: 3rem;
-  min-height: 10rem;
-}
-#product-info > div {
-  padding: 0px;
-}
-#product-description h1 {
-  color: @dark-blue;
-  font-size: 1.4rem;
-  font-weight: 400;
-  letter-spacing: 0.04rem;
-  margin: 3rem 0rem 1.6rem 0rem;
-}
-#product-description p,
-#product-description li {
-  font-size: 0.88rem;
-  line-height: 1.48rem;
-  margin: 0rem 0rem 1rem 0rem;
-}
-.product-price {
-  color: @dark-blue;
-  display: inline-block;
-  font-size: 2.44rem;
-  margin-bottom: 3rem;
-}
-.product-price > span {
-  .sans-serif;
-  color: @dark-blue-medium;
-  font-size: 0.8rem;
-  letter-spacing: 0.04rem;
-}
-#product-add button[type=submit],
-#product-add input[type=submit] {
-  // background-image: url('icon-plus.png');
-  // background-position: 0% 50%;
-  // background-repeat: no-repeat;
-  // background-size: auto 100%;
-}
-#why-login {
-  .sans-serif;
-  display: inline-block;
-  float: right;
-  font-size: 0.76rem;
-  line-height: 1rem;
-  margin-top: 1.52rem;
-  text-align: right;
-  text-transform: uppercase;
-  width: 130px;
-}
 #value-prop {
   display: block;
   margin-top: 8rem;
@@ -109,8 +38,8 @@
   font-size: 0.92rem;
 }
 #value-prop p {
-  font-size: 0.84rem;
-  line-height: 1.2rem;
+  font-size: 1rem;
+  line-height: 1.6rem;
   margin: 0px;
 }
 #alternatives {
@@ -252,16 +181,6 @@
   #hero h1 {
     font-size: 1.2rem;
     padding: 20rem 0rem 0rem 0rem;
-  }
-  #product-info {
-    display: grid;
-    grid-auto-rows: minmax(100px, auto);
-    grid-column-gap: 3rem;
-    grid-template-columns: 7fr 5fr;
-    margin-top: 4rem;
-  }
-  #product-description h1 {
-    margin-top: 0px;
   }
   #value-prop {
     display: grid;
@@ -410,3 +329,9 @@
 @media (min-width: 1400px) {
 
 }
+
+
+
+@import '_product.less';
+@import '_value-proposition.less';
+@import '_recommendations.less';
