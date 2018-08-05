@@ -103,7 +103,7 @@
 
 
     <header id="header">
-      <div id="msg">Use promo code <strong>FREEDOM18</strong> for a 20% discount. Expires&nbsp;7/22/18.</div>
+      <div id="msg">&nbsp;</div>
 
       <div id="account">
         <div id="login">
@@ -197,8 +197,8 @@
         <section id="tc">
           Copyright &copy; {{ "now" | date: "%Y" }} {{ shop.name }}. All&nbsp;rights&nbsp;reserved.<br />
           <a href="/pages/privacy/">Privacy&nbsp;Policy</a> <span class="pipe"></span>
-          <a href="/pages/terms/">Terms&nbsp;of&nbsp;Use</a> <span class="pipe"></span>
-          <a href="/pages/returns/">Return&nbsp;Policy</a>
+          <a href="/pages/terms/">Terms&nbsp;of&nbsp;Service</a> <span class="pipe"></span>
+          <a href="/pages/returns/">Returns&nbsp;Policy</a>
         </section>
       </div>
     </footer>
@@ -209,33 +209,59 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="{{ 'functions.min.js' | asset_url }}"></script>
-{%- if template.name == 'product' -%}
-    <script src="{{ 'product.min.js' | asset_url }}"></script>
-{%- else -%}
 
+{%- if template.name == 'product' -%}
+
+    <script src="{{ 'product.min.js' | asset_url }}"></script>
+
+{%- else -%}
 {%- endif -%}
-{%- if template.name == 'index' or template.name == 'product' -%}
+
     <script type="text/javascript">
       $(document).ready(function() {
-        $.getJSON( "{{ 'data.json' | asset_url }}", function( data ) {
-          // var items = [];
-          // $.each( data, function( key, val ) {
-          //   items.push( "<li id='" + key + "'>" + val + "</li>" );
-          // });
-          //
-          // $( "<ul/>", {
-          //   "class": "my-new-list",
-          //   html: items.join( "" )
-          // }).appendTo( "body" );
+        $.ajax({
+          url: 'https://sheets.googleapis.com/v4/spreadsheets/1Cu8QSQQFrdLt6gnmt_66BWSwEiC7o14lzOGL3wybgEc/values/TopMessageBar!B2?key=AIzaSyB6KiUPK4HQTo5zMYwfQQMNFfQDyWMgr7A',
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: function(data) {
+            $(data.values[0]).each(function(index, value) {
+              // console.log(value.url);
+              $("#msg").html(value);
+            });
+          }
         });
       });
     </script>
+
+{%- if template.name == 'index' or template.name == 'product' -%}
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: '{{ 'data.json' | asset_url }}',
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: function(data) {
+            $(data.index.board).each(function(index, value) {
+              // console.log(value.url);
+              $("#board > div > div:nth(" + index + ")").attr("style", "background-image: url(" + value.url + ")");
+            });
+          }
+        });
+      });
+    </script>
+
 {%- else -%}
+
     <script type="text/javascript">
       $(document).ready(function() {
 
       });
     </script>
+
 {%- endif -%}
+
   </body>
 </html>

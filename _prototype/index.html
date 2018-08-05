@@ -61,7 +61,7 @@
 
 
     <header id="header">
-      <div id="msg">Use promo code <strong>FREEDOM18</strong> for a 20% discount. Expires&nbsp;7/22/18.</div>
+      <div id="msg"></div>
 
       <div id="account">
         <div id="login">
@@ -171,7 +171,7 @@
     <footer id="footer">
       <div class="container">
         <blockquote id="quality">
-          <p><span>&ldquo;</span>When something is personally important to you, you care about its details.  That is <em>exactly</em> why Pamela Kay lifestyle goods are <em>hand made ~ like you</em>.  Each material is meticulously chosen, and each cut and stitch precisely made.  The result is a unique signature of excellence in each&nbsp;product.<span>&rdquo;</span></p>
+          <p><span>&ldquo;</span>When something is personally important to you, you care about its details.  That is <em>exactly</em> why Pamela Kay lifestyle goods are <em>hand made ~ like you</em>.  Each material (with all its imperfections) is meticulously chosen.  The result is a charming personality in each&nbsp;one.<span>&rdquo;</span></p>
 
           <footer><a href="/pages/about/">Pamela Kay Mallari</a></footer>
         </blockquote>
@@ -184,7 +184,7 @@
 
         <section id="credit">
           <h5>We accept the following credit cards.</h5>
-          <img src="/assets/badge-credit.png" alt="We accept Visa, MasterCard, American Express, and Discover Card.">
+          <img src="/assets/badge-credit.png" alt="We accept American Express, Visa, MasterCard, and Discover Card.">
         </section>
 
 
@@ -209,5 +209,21 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/assets/functions.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $.ajax({
+          url: 'https://sheets.googleapis.com/v4/spreadsheets/1Cu8QSQQFrdLt6gnmt_66BWSwEiC7o14lzOGL3wybgEc/values/TopMessageBar!B2?key=AIzaSyB6KiUPK4HQTo5zMYwfQQMNFfQDyWMgr7A',
+          dataType: 'json',
+          type: 'get',
+          cache: false,
+          success: function(data) {
+            $(data.values[0]).each(function(index, value) {
+              // console.log(value.url);
+              $("#msg").html(value);
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>

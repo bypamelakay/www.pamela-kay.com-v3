@@ -1,28 +1,88 @@
 {
   "index": {
-    "board": {
-      "cell1": "url",
-      "cell2": "url",
-      "cell3": "url",
-      "cell4": "url",
-      "cell5": "url",
-      "cell6": "url",
-      "cell7": "url",
-      "cell8": "url",
-      "cell9": "url",
-      "cell10": "url"
-    },
-    "recommendations": {
-      "product1": "slug",
-      "product2": "slug",
-      "product3": "slug",
-      "product4": "slug",
-      "product5": "slug",
-      "product6": "slug",
-      "product7": "slug",
-      "product8": "slug",
-      "product9": "slug",
-      "product10": "slug"
-    }
+    "board": [
+      {
+        "cell": 1,
+        "url": "fullUrl1"
+      },
+      {
+        "cell": 2,
+        "url": "fullUrl2"
+      },
+      {
+        "cell": 3,
+        "url": "fullUrl3"
+      },
+      {
+        "cell": 4,
+        "url": "fullUrl4"
+      },
+      {
+        "cell": 5,
+        "url": "fullUrl5"
+      },
+      {
+        "cell": 6,
+        "url": "fullUrl6"
+      },
+      {
+        "cell": 7,
+        "url": "fullUrl7"
+      },
+      {
+        "cell": 8,
+        "url": "fullUrl8"
+      },
+      {
+        "cell": 9,
+        "url": "fullUrl9"
+      },
+      {
+        "cell": 10,
+        "url": "fullUrl10"
+      }
+    ],
+    "recommendations": [
+      {
+        "product": 1,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 2,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 3,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 4,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 5,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 6,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 7,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 8,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 9,
+        "slug": "slugUrl"
+      },
+      {
+        "product": 10,
+        "slug": "slugUrl"
+      }
+    ]
   }
 }
